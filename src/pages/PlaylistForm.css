@@ -1,0 +1,69 @@
+.playlists-container-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 75%;
+    width: 100%;
+}
+.playlist-page-add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.add-choises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-inline-end: 1px solid white;
+    border-image: linear-gradient(0deg, rgba(195, 68, 254, 0), rgb(195, 68, 254) , rgba(195, 68, 254, 0)) 1;
+    height: 100%;
+    width: 100%;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* XTREAM FORM */
+
+.xtream-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 68px;
+}
+
+.xtream-form-label {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 300;
+
+}
+
+.xtream-form-input {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid white;
+    background-color: transparent;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif; /* Font family */
+    color: #ffffff; /* Text color */
+
+}
+.xtream-form-input:hover , .xtream-form-input.focused {
+
+    outline-width: 4px;
+}
+/* FORM BUTTON */
+

@@ -1,0 +1,88 @@
+.playlist-card {
+    width: 383px;
+    flex: 0 0 auto; /* Prevent items from resizing */
+    margin-right: 50px; /* Optional: space between items */
+}
+
+.playlist-card-content {
+    height: 313px;
+    background-color: rgb(105, 130, 5);
+    border-radius: 14px;
+    outline:none white 4px;
+    margin: 4px;
+    background-image: radial-gradient(circle at top center,#5F0589 , #24064A 85%);
+    padding-block: 40px;
+    padding-inline: 20px;
+}
+
+.playlist-card-content:hover , .playlist-card-content.focused {
+    outline-style: solid;
+    cursor: pointer;
+}
+
+.playlist-card_header {
+    display: flex;
+    margin-top: -15px;
+    overflow: hidden;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.playlist-card_title {
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+.playlist-card_items {
+    font-size: 21px;
+    text-align: left;
+    margin-block: 13px;
+    opacity: 50%;
+}
+.playlist-card_items:hover , .playlist-card_items.focused {
+    opacity: 100%;
+}
+
+.playlist-card-status {
+    display: flex;
+    justify-content: center;
+}
+
+.is-selected {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.playlist-add-content {
+    height: 313px;
+    background-color: rgb(105, 130, 5);
+    border-radius: 14px;
+    outline:none white 4px;
+    margin: 4px;
+    background-image: radial-gradient(circle at top center,#6E6E6E , #1E1E1E 85%);
+    padding-block: 40px;
+    padding-inline: 20px;
+}
+
+.playlist-add-content:hover , .playlist-add-content.focused {
+    outline-style: solid;
+    cursor: pointer;
+}
+
+
+.plus-svg {
+    width: 160px;
+    stroke: white;
+    margin-block: 35px;
+}

@@ -1,0 +1,81 @@
+
+
+.card {
+    --padding-inline: 48px;
+    --padding-block: 30px;
+    height: calc(200px - 2*var(--padding-block));
+    width: calc(500px - 2*var(--padding-inline));
+    background-image: linear-gradient(135deg,#292828 15%, #989797 150%);
+    outline: solid transparent 5px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--padding-inline);
+    padding-block: var(--padding-block);
+    cursor: pointer;
+    /* transition: 90ms ease-in-out; */
+}
+.card-costum {
+    --padding-inline: 48px;
+    --padding-block: 30px;
+    height: calc(200px - 2*var(--padding-block));
+    width: calc(500px - 2*var(--padding-inline));
+    outline: solid transparent 5px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--padding-inline);
+    padding-block: var(--padding-block);
+    cursor: pointer;
+    /* transition: 90ms ease-in-out; */
+}
+.card.focused-fav {
+    outline-color: white;
+    background-image: linear-gradient(135deg,#412F00 15%, #B3AD1E 150%);
+    /* scale: 1.04; */
+}
+
+.card.focused-recent {
+    outline-color: white;
+    background-image: linear-gradient(135deg,#001E41 15%, #1EAAB3 150%);
+}
+
+.card.focused,
+ .card:hover{
+    outline-color: white;
+    background-image: linear-gradient(135deg,#24064A 15%, #C344FE 150%);
+    /* scale: 1.04; */
+}
+
+.icons {
+    display: grid;
+    grid-column: 1;
+    justify-content: space-between;
+}
+
+.label {
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    text-align: left;
+    padding-inline-end: 15px;
+    /* transition: 90ms ease-out; */
+}
+.label:hover , .label.focused {
+    font-weight: 600;
+}
+
+
+.icon {
+    height: 48px;
+    stroke: transparent;
+}
+.icon.active {
+    stroke: white;
+}
+
+.locked.icon {
+    padding-block-start: calc(200px - 2*var(--padding-block) - 2*48px - 10px);
+}

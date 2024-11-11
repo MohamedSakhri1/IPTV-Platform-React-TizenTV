@@ -1,0 +1,40 @@
+html {
+    background-color: #141218;
+    background-attachment: fixed;
+}
+
+body{
+    color: #ffffff;
+    text-align: center;
+}
+
+strong{
+    font-weight: 600;
+}
+
+h1{
+    font-size:  min(64px, 5vw);
+    font-weight: 100;
+    margin-top: 1em;
+    text-align: center;
+}
+h4{
+    font-size:  min(40px, 3vw);
+    font-weight: 200;
+    text-align: center;
+    padding-inline: 20%;
+    margin-top: 2em;
+}
+h5{
+  padding-top: 1rem;
+  font-weight: 300;
+  padding-inline: 10%;
+  font-size: min(14px, 3vw);
+}
+
+.Logo {
+    display: block;
+    margin-inline: auto;
+    padding-top: 7vh;
+    height: min(310px,20vw);
+}

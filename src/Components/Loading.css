@@ -1,0 +1,37 @@
+.loading-bar {
+    width: 100%;
+    background-image: radial-gradient(rgba(0,0,0,.8), rgba(0,0,0,.3) 60%);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 100%;
+}
+
+img.loading-gif {
+    margin-block-end: 100px ;
+}
+
+.loading-label {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 0 15px black;
+
+}
+
+.loading-progress {
+    width: 0;
+    height: 100%;
+    background-color: rgba(76, 175, 80, .3);
+    animation: loading 5s linear infinite;
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    100% { width: 100%; }
+}

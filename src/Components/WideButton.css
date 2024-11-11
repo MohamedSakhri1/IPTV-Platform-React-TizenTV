@@ -1,0 +1,29 @@
+.wide-button-container {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    width:100%;
+    height:90px;
+    
+}
+button.wide-button {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Include padding and border in the button's width and height */
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    background-color: transparent;
+    background-image: none;  /*for the button */
+    border-block:solid 0.5px white;
+    border-inline: none;
+    overflow: hidden;
+    text-wrap:nowrap;
+}
+
+button.wide-button:hover , button.wide-button.focused {
+    background-image: linear-gradient(90deg , rgba(29, 11, 52, 0) 20%, rgba(132, 43, 183, 1) 110%);  /*for the button */
+    font-weight: 500;
+}

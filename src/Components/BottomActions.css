@@ -1,0 +1,17 @@
+
+.bottom-fixed-container {
+    position: fixed;
+    bottom: 0; /* Stick to the bottom of the viewport */
+    left: 0; /* Align with the left side of the viewport */
+    width: 100%; /* Full width */
+    background-image: radial-gradient(ellipse at bottom right ,rgb(20, 18, 24) , rgba(20, 18, 24, 0) 71%) ; /* Background color */
+    color: white; /* Text color */
+    padding-inline: 68px;
+    padding-block-start: 40px;
+    padding-block-end: 10px;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+
+}
