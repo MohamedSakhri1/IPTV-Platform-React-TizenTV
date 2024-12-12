@@ -19,7 +19,7 @@ cette application est en cours de devloppement
 ```
 ### Generation de Code Unique de .wgt (Optionnel)
 1. dans le 'Tizen Studio' creer un projet vide
-2. le fichier `config.xml` a un attribut
+2. le fichier `tizen/config.xml` a un attribut
 ```
 <tizen:application id="<Code Unique>.galaxytv" package="<Code Unique>" required_version="2.3"/>
 ```
