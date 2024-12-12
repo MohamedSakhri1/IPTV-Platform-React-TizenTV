@@ -1,0 +1,17 @@
+.app-container {
+    display: grid;
+    grid-template-columns: calc(90px + var(--sidebar-content-space)) 1fr; /* Initial layout: narrow sidebar and main content */
+    height: 100vh; /* Full height of the viewport */
+    /* transition: grid-template-columns 200ms ease-in-out; Smooth transition for the grid layout */
+  }
+
+.sidebar.focused ~ .main-content {
+    grid-column: 2 / span 1;
+    margin-left: var(--sidebar-content-space); /* Adjust the main content to accommodate the expanded sidebar */
+  }
+
+.main-content {
+    padding: 20px;
+    transition: margin-left 200ms ease-out; /* Smooth transition for the content shift */
+    overflow: auto; /* Ensure main content scrolls if necessary */
+  }

@@ -1,0 +1,107 @@
+:root {
+    --icons-padding: 25px;
+    --sidebar-margin: 50px;
+    --side-transition: 200ms all ease-out;
+    --label-transition: 200ms all ease-out;
+    --sidebar-expanded: 200px;
+    --label-margin-left: 20px;
+    --label-padding-right: 15px;
+}
+
+
+.icons {
+    height: 50px;
+    fill: none;
+    stroke: white;
+    transition: var(--side-transition);
+}
+
+.side-row {
+    height: 60px;
+    padding-left: 17px;
+    display: flex;
+    align-items: center;
+    border-inline-start: 3px transparent solid;
+    justify-content: flex-start;
+    align-content: space-between;
+    transition: var(--side-transition);
+}
+
+.side-row:hover,
+.side-row.focused {
+    cursor: pointer;
+    background-color: white;
+    
+}
+
+.icon-label {
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    transition: var(--label-transition);
+    margin-left: var(--label-margin-left);
+    padding-right: var(--label-padding-right); /* Ensure label doesn't touch border */
+}
+
+.sidebar {
+    z-index: 100;
+    position: relative; /* Sidebar in relative position to allow expansion */
+    display: grid;
+    align-content: space-between;
+    height: 100vh;
+    width: 90px;
+    border-right: 1px solid;
+    border-image: linear-gradient(45deg, rgba(36, 6, 74, 0) 10%, var(--light) 50%, rgba(36, 6, 74, 0)) 1;
+    transition: var(--side-transition);
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.side-row:hover ,
+.sidebar.focused {
+    width: var(--sidebar-expanded);
+}
+
+.sidebar-menu {
+    display: grid;
+    align-content: space-between;
+    height: calc(50px * 3 + 85px * 2);
+}
+
+.sidebar:hover .side-row,
+.sidebar.focused .side-row {
+    width: calc(100% - 20px);
+    padding-right: 20px; /* Ensure proper spacing inside the sidebar */
+}
+
+.sidebar:hover .icon-label,
+.sidebar.focused .icon-label {
+    font-weight: 300;
+    opacity: 1;
+    visibility: visible;
+    color: white;
+}
+
+.side-row:hover .icon-label,
+.side-row.focused .icon-label {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+
+.side-row:hover .icons,
+.side-row.focused .icons {
+    stroke: var(--dark);
+}
+
+.side-row.active {
+    border-inline-start: 3px white solid;
+}
+
+#playlists {
+    margin-top: var(--sidebar-margin);
+}
+
+#settings {
+    margin-bottom: var(--sidebar-margin);
+}

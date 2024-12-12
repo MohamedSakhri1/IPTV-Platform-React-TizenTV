@@ -1,0 +1,52 @@
+.settings-page-wrapper {
+    margin-block: 20px;
+    margin-right: 20px;
+    height: 100%;
+}
+
+.settings-choises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-inline-end: 1px solid white;
+    border-image: linear-gradient(0deg, rgba(195, 68, 254, 0), rgb(195, 68, 254) , rgba(195, 68, 254, 0)) 1;
+    height: 100%;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.password-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 3%;
+}
+.password-form-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    opacity: 40%;
+}
+.password-form-content.enabled {
+    opacity: 100%;
+}
+.password-form-button {
+    margin-top: 2%;
+    margin-bottom: 10%;
+
+    display: flex;
+    justify-content: right;
+}
+
+

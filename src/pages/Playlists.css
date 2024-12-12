@@ -1,0 +1,41 @@
+.playlist-page-wrapper {
+    padding-top: 70px;
+    padding-inline: 68px;
+    box-sizing: border-box; /* Include padding in the height calculation */
+    height: calc(100vh - 70px); /* Subtract the total padding from the height */
+    
+}
+
+.playlist-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.current-date {
+    font-size: 24px;
+}
+
+.playlist-page-header {
+    text-align: left;
+    font-weight:600;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 64px;
+
+}
+
+
+.playlists-container {
+    margin-top: 219px;
+
+    align-items:flex-start;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.playlists-container::-webkit-scrollbar {
+    display: none; /* Optionally hide the scrollbar for a cleaner look */
+}

@@ -1,0 +1,20 @@
+.normal-button{
+    background-color: transparent;
+    border: none;
+    outline: 2px solid white;
+    border-radius: 8px;
+    padding: .25em 2em;
+
+    /* transition: all 80ms ease-out; */
+    font-size: min(32px, 2vw);
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+.normal-button:hover, .normal-button.focused{
+    font-weight: 600;
+    cursor: pointer;
+    background-image: var(--button-hover-background);
+    outline-width: 4px;
+    
+}
