@@ -3,7 +3,7 @@ cette application est en cours de devloppement
 ## guide de deployement sur une TV Samsung Tizen
 1. Installation de Tizen Studio
 2. Creation d'un compte Samsung devlopper
-3. Creation d'une sertificat Samsung
+3. Creation d'une certificat Samsung
 4. Activer DEVELOPER_MODE sur la TV
 5. Connecter l'ordinateur avec la tv a travers 'Device Manager'
 6. modifier les scripts de `Package.json` par
