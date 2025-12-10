@@ -10,7 +10,7 @@ cette application est en cours de devloppement
 ```
 "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp tizen/* build && tizen build-web -- build && tizen package -t wgt -s <entrer le nom de votre Sertificat> -- build/.buildResult",
+    "build": "react-scripts build && cp tizen/* build && tizen build-web -- build && tizen package -t wgt -s <entrer le nom de votre Certificat> -- build/.buildResult",
     "deploy": "tizen install -n \"GalaxyTV.wgt\" -- build/.buildResult",
     "debug": "tizen install -n GalaxyTV.wgt -- build/.buildResult && tizen run -p <Enter le code unique (Optionnel)>.galaxytv",
     "test": "react-scripts test",
